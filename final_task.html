@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <title>Final Task</title>
+    </head>
+    <style>
+        html{
+            font-size:16px;
+        }
+        body{
+            margin:10px;
+            padding:20px;
+            font-family: 'Segoe UI',sans-serif;
+            background-color: #333;
+            color:#808080;
+        }
+        h1{
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00ff7f;
+        }
+        .game-container{
+            width:80%;
+            margin: 0 auto;
+            padding:20px;
+            background-color:#adff2f;
+            border:2px solid #00ff7f;
+            border-radius: 10px;
+        }
+        .intro{
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .level1{
+            background-color: #333;
+            border: 1px solid #00c8ff;
+            margin-bottom: 15px;
+            padding: 10px;
+            color: #fff;
+            width: 200px;
+            height: 100px;
+        }
+        .level1 h2{
+            font-size:1.5em;
+            margin: 10px;
+            color: #00c8ff;
+        }
+        .level1 p{
+            font-size: 1em;
+        }
+        .level2 {
+            background-color: #333;
+            border: 1px solid #00c8ff;
+            margin-bottom: 15px;
+            padding: 10px;
+            color: #fff;
+            font-size:1.2em;
+        }
+        .level2 h2{
+            font-size:1.5em;
+            margin: 10px;
+            color: #00c8ff;
+        }
+        .level2 p{
+            font-size: 1em;
+        }
+        .level3 {
+            background-color: #333;
+            border: 1px solid #00c8ff;
+            margin-bottom: 15px;
+            padding: 10px;
+            color: #fff;
+            font-size:1.5rem;
+        }
+        .level3 h2{
+            font-size:1.5em;
+            margin: 10px;
+            color: #00c8ff;
+        }
+        .level3 p{
+            font-size: 1em;
+        }
+        .level4{
+            background-color: #333;
+            border: 1px solid #00c8ff;
+            margin-bottom: 15px;
+            padding: 10px;
+            color: #fff;
+            width:90%;
+        }
+        .level4 h2{
+            font-size:1.5em;
+            margin: 10px;
+            color: #00c8ff;
+        }
+        .level4 p{
+            font-size: 1em;
+
+        }
+         .hex-block{
+            color: #708cfa;
+        }
+        .rgb-block{
+            color: rgb(157, 105, 224);
+        }
+        .rgba-block{
+            color: rgba(90, 178, 229, 0.5)
+        }
+    </style>
+    <body>
+        <div class="game-container">
+            <p class="intro">
+                Уровень 1: <strong>px</strong> - броня <br>
+                Уровень 2: <strong>em</strong> - ловкость <br>
+                Уровень 3: <strong>rem</strong> - сила <br>
+                Уровень 4: <strong>%</strong> - адаптивность <br>
+            </p>
+        
+
+            <div class="level1">
+                <h2>Уровень 1 - px</h2>
+                <p>Фиксированные размеры: 200x100 пикселей</p>
+            </div>
+
+            <div class="level2">
+                <h2>Уровень 2 - em</h2>
+                <p>Размеры шрифта зависят от родителя</p>
+            </div>
+
+            <div class="level3">
+                <h2>Уровень 3 - rem</h2>
+                <p>Размеры шрифта зависят от html</p>
+            </div>
+
+            <div class="level4">
+                <h2>Уровень 4 - %</h2>
+                <p>Ширина зависит от родительского контейнера</p>
+            </div>
+        </div>
+        <div class="hex-block">
+            <h2>Welcome!</h2>
+            <p>This is paragraph</p>
+        </div>
+        <div class="rgb-block">
+            <h3>This is next topic</h3>
+            <p>Paragraph number 2</p>
+            <img scr="picture-lake.jpg" alt="nature" width="1024" height="683">
+        </div>
+        <div class="rgba-block">
+            <h3>Topic number 3</h3>
+            <p>paragraph number 3</p>
+        </div>
+    </body>
+</html>
