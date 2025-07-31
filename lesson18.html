@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        .static-element{
+            position: static;
+            background-color: #ff5;
+            padding: 20px;
+            border: 1px solid #aaa;
+        }
+        .relative-element{
+            position: relative;
+            top: 20px;
+            left: 30px;
+            background-color: #d0ffd0;
+            padding: 20px;
+            border: 1px solid #aaa;
+        }
+        .container{
+            position: relative;
+            height: 200px;
+            background-color: #ffe0e0;
+            padding: 20px;
+            border: 1px solid #aaa;
+        }
+        .absolute-element{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ffb3b3;
+            padding: 10px;
+        }
+        .fixed-element{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ccccff;
+            padding: 15px;
+            border: 1px solid #aaa;
+            z-index: 10000;
+        }
+        .sticky-element{
+            position: sticky;
+            top: 0;
+            background-color: #ffff99;
+            padding: 10;
+            border: 1px solid #aaa;
+            z-index: 1000;
+        }
+    </style>
+    <body>
+        <div class="static-element">
+            <h2>Position: static</h2>
+            <p>This element is in the normal document flow. It is not affected by positioning properties like top, left etc.</p>
+        </div>
+        <div class="relative-element">
+            <h2>Position: relative</h2>
+            <p>This element is shifted 20px down abd 30px to the right from ins normal positon.It still occupies the original space in the flow</p>
+        </div>
+        <div class="container">
+            <h2>Position: absolute</h2>
+            <p>This is the container with <code>position: relative</code>.</p>
+            <div class="absolute-element">
+                Absolutely positioned block inside the container
+            </div>
+        </div>
+        <div class="fixed-element">
+            <h2>Position: fixed</h2>
+            <p>Scroll down to see the fixed element stay in place</p>
+        </div>
+        <div class="sticky-element">
+            <h2>Position: sticky</h2>
+            <p>Scroll down the page — the header will stick to the top</p>
+        </div>
+    </body>
+</html>
