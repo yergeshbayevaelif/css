@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        body{
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        h2{
+            margin-top: 20PX;
+            color: #333;
+        }
+        .box{
+            background-color: lightgrey;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+        .flex{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .flex-wrap{
+            flex-wrap: wrap;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .center{
+            justify-content: center;
+            align-items: ceter;
+            height: 150px;
+        }
+        .grow-1{
+            flex: 1;
+            background: lightblue;
+        }
+        .grow-2{
+            flex: 2;
+            background: lightgreen;
+        }
+        .fixed{
+            flex: 0 0 100px;
+            background: lightcoral;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #222;
+            padding: 10px;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .card{
+            flex: 11 30%;
+            background: #eee;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+    <body>
+        <h2>1. Display</h2>
+        <div class="flex">
+            <div class="box" style="display: block;">block</div>
+            <div class="box" style="display: inline;">inline</div>
+            <div class="box" style="display: flex;">flex</div>
+        </div>
+        <h2>2. Flex-container</h2>
+        <div class="flex">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <h2>3. Flex-direction, flex-wrap, flex-flow</h2>
+        <div class="flex column flex-wrap" style="background: #ddd;">
+            <div class="box">A</div>
+            <div class="box">B</div>
+            <div class="box">C</div>
+            <div class="box">D</div>
+        </div>
+        <h2>4. Выравнивание элементов</h2>
+        <div class="flex center" style="background: #ddd;">
+            <div class="box">Центр</div>
+        </div>
+        <h2>5. Свойства `flex-grow`, `flex-shrink`, `flex-basis` и сокращённое свойство `flex`</h2>
+        <div class="flex">
+            <div class="box grow-1">1</div>
+            <div class="box grow-2">2</div>
+            <div class="box fixed">fixed 100px</div>
+        </div>
+        <h2>6. Практическое задание</h2>
+        <div class="flex">
+            <div class="box" style="flex: 0 0 50%;">50%</div>
+            <div class="box" style="flex: 1;">auto</div>
+            <div class="box" style="flex: 0 0 100px;">100px</div>
+        </div>
+        <h2>7. Меню</h2>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <h2>8. Галерея</h2>
+        <div class="gallery">
+            <div class="card">Карточка 1</div>
+            <div class="card">Карточка 2</div>
+            <div class="card">Карточка 3</div>
+            <div class="card">Карточка 4</div>
+        </div>
+    </body>
+</html>
